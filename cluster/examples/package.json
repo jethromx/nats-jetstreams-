@@ -1,0 +1,21 @@
+{
+  "name": "nats-tls-examples",
+  "version": "1.0.0",
+  "description": "Ejemplos de cliente NATS con TLS",
+  "main": "nats_client_tls.js",
+  "scripts": {
+    "start": "node nats_client_tls.js",
+    "test": "node nats_client_tls.js"
+  },
+  "dependencies": {
+    "nats": "^2.19.0"
+  },
+  "keywords": [
+    "nats",
+    "tls",
+    "jetstream",
+    "messaging"
+  ],
+  "author": "MedFlow",
+  "license": "MIT"
+}

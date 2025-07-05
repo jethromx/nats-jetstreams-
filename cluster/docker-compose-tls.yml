@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  nats-node-1-tls:
+    image: nats:2.10-alpine
+    container_name: nats-node-1-tls
+    hostname: nats-node-1
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+      - "6222:6222"
+    volumes:
+      - ./nats-node-1-tls.conf:/etc/nats/nats-server.conf
+      - ./certs:/etc/nats/certs:ro
+      - ./jetstream_data/node-1:/data/jetstream-node-1
+      - ./logs:/var/log/nats
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster-tls
+    restart: unless-stopped
+
+  nats-node-2-tls:
+    image: nats:2.10-alpine
+    container_name: nats-node-2-tls
+    hostname: nats-node-2
+    ports:
+      - "4223:4223"
+      - "8223:8223"
+      - "6223:6223"
+    volumes:
+      - ./nats-node-2-tls.conf:/etc/nats/nats-server.conf
+      - ./certs:/etc/nats/certs:ro
+      - ./jetstream_data/node-2:/data/jetstream-node-2
+      - ./logs:/var/log/nats
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster-tls
+    depends_on:
+      - nats-node-1-tls
+    restart: unless-stopped
+
+  nats-node-3-tls:
+    image: nats:2.10-alpine
+    container_name: nats-node-3-tls
+    hostname: nats-node-3
+    ports:
+      - "4224:4224"
+      - "8224:8224"
+      - "6224:6224"
+    volumes:
+      - ./nats-node-3-tls.conf:/etc/nats/nats-server.conf
+      - ./certs:/etc/nats/certs:ro
+      - ./jetstream_data/node-3:/data/jetstream-node-3
+      - ./logs:/var/log/nats
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster-tls
+    depends_on:
+      - nats-node-1-tls
+    restart: unless-stopped
+
+networks:
+  nats-cluster-tls:
+    driver: bridge

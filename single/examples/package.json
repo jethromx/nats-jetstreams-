@@ -1,0 +1,22 @@
+{
+  "name": "nats-single-tls-examples",
+  "version": "1.0.0",
+  "description": "Ejemplos de cliente NATS Single con TLS",
+  "main": "nats_single_client.js",
+  "scripts": {
+    "start": "node nats_single_client.js",
+    "test": "node nats_single_client.js"
+  },
+  "dependencies": {
+    "nats": "^2.19.0"
+  },
+  "keywords": [
+    "nats",
+    "tls",
+    "jetstream",
+    "messaging",
+    "single-node"
+  ],
+  "author": "MedFlow",
+  "license": "MIT"
+}

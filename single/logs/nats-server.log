@@ -1,0 +1,57 @@
+[1] 2025/07/05 01:18:27.619175 [INF] Starting nats-server
+[1] 2025/07/05 01:18:27.619291 [INF]   Version:  2.10.29
+[1] 2025/07/05 01:18:27.619322 [INF]   Git:      [f91ddd8]
+[1] 2025/07/05 01:18:27.619366 [INF]   Name:     nats-single-tls
+[1] 2025/07/05 01:18:27.619403 [INF]   Node:     Ei0XwQIk
+[1] 2025/07/05 01:18:27.619433 [INF]   ID:       NBIEKMNEC35GMXMOUVMCCB5CTCXRPVN3OTMA6ECVPNBRBCDWUILYFKYW
+[1] 2025/07/05 01:18:27.619539 [INF] Using configuration file: /etc/nats/nats-server.conf
+[1] 2025/07/05 01:18:27.621361 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2025/07/05 01:18:27.621587 [INF] Starting JetStream
+[1] 2025/07/05 01:18:27.625292 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2025/07/05 01:18:27.625568 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2025/07/05 01:18:27.625720 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2025/07/05 01:18:27.625824 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2025/07/05 01:18:27.625868 [INF] 
+[1] 2025/07/05 01:18:27.625953 [INF]          https://docs.nats.io/jetstream
+[1] 2025/07/05 01:18:27.626045 [INF] 
+[1] 2025/07/05 01:18:27.626084 [INF] ---------------- JETSTREAM ----------------
+[1] 2025/07/05 01:18:27.626213 [INF]   Max Memory:      3.73 GB
+[1] 2025/07/05 01:18:27.626437 [INF]   Max Storage:     18.63 GB
+[1] 2025/07/05 01:18:27.626487 [INF]   Store Directory: "/data/jetstream/jetstream"
+[1] 2025/07/05 01:18:27.626659 [INF] -------------------------------------------
+[1] 2025/07/05 01:18:27.636039 [INF] Listening for websocket clients on wss://0.0.0.0:8080
+[1] 2025/07/05 01:18:27.636575 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2025/07/05 01:18:27.636691 [INF] TLS required for client connections
+[1] 2025/07/05 01:18:27.636844 [INF] Server is ready
+[1] 2025/07/05 01:18:54.593393 [INF] Trapped "terminated" signal
+[1] 2025/07/05 01:18:54.595384 [INF] Initiating Shutdown...
+[1] 2025/07/05 01:18:54.595744 [INF] Initiating JetStream Shutdown...
+[1] 2025/07/05 01:18:54.595810 [INF] JetStream Shutdown
+[1] 2025/07/05 01:18:54.596456 [INF] Server Exiting..
+[1] 2025/07/05 01:19:40.944014 [INF] Starting nats-server
+[1] 2025/07/05 01:19:40.944223 [INF]   Version:  2.10.29
+[1] 2025/07/05 01:19:40.944255 [INF]   Git:      [f91ddd8]
+[1] 2025/07/05 01:19:40.944279 [INF]   Name:     nats-single-tls
+[1] 2025/07/05 01:19:40.944302 [INF]   Node:     Ei0XwQIk
+[1] 2025/07/05 01:19:40.944325 [INF]   ID:       NCOHXHCUSEOO4H2DJQWQOQWMHI2HOLWXBLLKKKEJ42VFDYUGVIE6KUHK
+[1] 2025/07/05 01:19:40.944378 [INF] Using configuration file: /etc/nats/nats-server.conf
+[1] 2025/07/05 01:19:40.945003 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2025/07/05 01:19:40.945147 [INF] Starting JetStream
+[1] 2025/07/05 01:19:40.947077 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2025/07/05 01:19:40.947111 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2025/07/05 01:19:40.947134 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2025/07/05 01:19:40.947164 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2025/07/05 01:19:40.947194 [INF] 
+[1] 2025/07/05 01:19:40.947217 [INF]          https://docs.nats.io/jetstream
+[1] 2025/07/05 01:19:40.947248 [INF] 
+[1] 2025/07/05 01:19:40.947274 [INF] ---------------- JETSTREAM ----------------
+[1] 2025/07/05 01:19:40.947300 [INF]   Max Memory:      3.73 GB
+[1] 2025/07/05 01:19:40.947323 [INF]   Max Storage:     18.63 GB
+[1] 2025/07/05 01:19:40.947346 [INF]   Store Directory: "/data/jetstream/jetstream"
+[1] 2025/07/05 01:19:40.947368 [INF] -------------------------------------------
+[1] 2025/07/05 01:19:40.950103 [INF] Listening for websocket clients on wss://0.0.0.0:8080
+[1] 2025/07/05 01:19:40.951112 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2025/07/05 01:19:40.951216 [INF] TLS required for client connections
+[1] 2025/07/05 01:19:40.951544 [INF] Server is ready
+[1] 2025/07/05 01:19:41.066841 [ERR] websocket: TLS handshake error from 172.18.0.1:56182: EOF
+[1] 2025/07/05 01:19:41.067186 [ERR] 172.18.0.1:59740 - cid:5 - TLS handshake error: EOF

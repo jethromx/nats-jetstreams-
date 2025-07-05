@@ -1,0 +1,62 @@
+[1] 2025/07/05 01:10:42.949942 [INF] Starting nats-server
+[1] 2025/07/05 01:10:42.950067 [INF]   Version:  2.10.29
+[1] 2025/07/05 01:10:42.950097 [INF]   Git:      [f91ddd8]
+[1] 2025/07/05 01:10:42.950121 [INF]   Cluster:  medflow_cluster_tls
+[1] 2025/07/05 01:10:42.950144 [INF]   Name:     nats-node-1-tls
+[1] 2025/07/05 01:10:42.950176 [INF]   Node:     1w1v328L
+[1] 2025/07/05 01:10:42.950215 [INF]   ID:       NCJGEMSK45V7W7HM27TYGECHSCNGW5CDLX6J4IELWG72I7LOR7LOXKZC
+[1] 2025/07/05 01:10:42.950276 [INF] Using configuration file: /etc/nats/nats-server.conf
+[1] 2025/07/05 01:10:42.951455 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2025/07/05 01:10:42.951828 [INF] Starting JetStream
+[1] 2025/07/05 01:10:42.953990 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[1] 2025/07/05 01:10:42.954383 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[1] 2025/07/05 01:10:42.954473 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[1] 2025/07/05 01:10:42.954535 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[1] 2025/07/05 01:10:42.954600 [INF] 
+[1] 2025/07/05 01:10:42.954805 [INF]          https://docs.nats.io/jetstream
+[1] 2025/07/05 01:10:42.955039 [INF] 
+[1] 2025/07/05 01:10:42.955241 [INF] ---------------- JETSTREAM ----------------
+[1] 2025/07/05 01:10:42.955313 [INF]   Max Memory:      1.86 GB
+[1] 2025/07/05 01:10:42.955354 [INF]   Max Storage:     9.31 GB
+[1] 2025/07/05 01:10:42.955386 [INF]   Store Directory: "/data/jetstream-node-1/jetstream"
+[1] 2025/07/05 01:10:42.955416 [INF] -------------------------------------------
+[1] 2025/07/05 01:10:42.957324 [INF] Starting JetStream cluster
+[1] 2025/07/05 01:10:42.957433 [INF] Creating JetStream metadata controller
+[1] 2025/07/05 01:10:42.963379 [INF] JetStream cluster recovering state
+[1] 2025/07/05 01:10:42.968810 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2025/07/05 01:10:42.968949 [INF] TLS required for client connections
+[1] 2025/07/05 01:10:42.969215 [INF] Server is ready
+[1] 2025/07/05 01:10:42.969280 [INF] Cluster name is medflow_cluster_tls
+[1] 2025/07/05 01:10:42.969788 [INF] Listening for route connections on 0.0.0.0:6222
+[1] 2025/07/05 01:10:43.070627 [WRN] Waiting for routing to be established...
+[1] 2025/07/05 01:10:43.185259 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.19.0.4:6222: connect: connection refused
+[1] 2025/07/05 01:10:43.185539 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.19.0.4:6222: connect: connection refused
+[1] 2025/07/05 01:10:43.224054 [INF] 172.19.0.4:59002 - rid:7 - Route connection created
+[1] 2025/07/05 01:10:43.231763 [INF] 172.19.0.4:58998 - rid:8 - Route connection created
+[1] 2025/07/05 01:10:43.235954 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.19.0.3:6222: connect: connection refused
+[1] 2025/07/05 01:10:43.235951 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.19.0.3:6222: connect: connection refused
+[1] 2025/07/05 01:10:43.250911 [INF] 172.19.0.3:51040 - rid:9 - Route connection created
+[1] 2025/07/05 01:10:43.268062 [INF] 172.19.0.3:51056 - rid:10 - Route connection created
+[1] 2025/07/05 01:10:43.281921 [WRN] JetStream has not established contact with a meta leader
+[1] 2025/07/05 01:10:43.282496 [INF] 172.19.0.3:6224 - rid:12 - Route connection created
+[1] 2025/07/05 01:10:43.284388 [INF] 172.19.0.4:59004 - rid:11 - Route connection created
+[1] 2025/07/05 01:10:43.288870 [INF] 172.19.0.3:6224 - rid:12 - Router connection closed: Duplicate Route
+[1] 2025/07/05 01:10:43.309174 [INF] 172.19.0.3:51064 - rid:13 - Route connection created
+[1] 2025/07/05 01:10:43.355363 [INF] 172.19.0.4:59018 - rid:14 - Route connection created
+[1] 2025/07/05 01:10:43.412110 [INF] 172.19.0.3:51078 - rid:15 - Route connection created
+[1] 2025/07/05 01:10:49.416661 [INF] Self is new JetStream cluster metadata leader
+[1] 2025/07/05 01:11:06.027799 [INF] 172.19.0.4:58998 - rid:8 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.027993 [INF] 172.19.0.4:59002 - rid:7 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.028057 [INF] 172.19.0.4:59004 - rid:11 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.028093 [INF] 172.19.0.4:59018 - rid:14 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.029943 [INF] 172.19.0.3:51078 - rid:15 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.030225 [INF] 172.19.0.3:51064 - rid:13 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.030229 [INF] 172.19.0.3:51056 - rid:10 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.030227 [INF] 172.19.0.3:51040 - rid:9 - Router connection closed: Client Closed
+[1] 2025/07/05 01:11:06.223080 [INF] Trapped "terminated" signal
+[1] 2025/07/05 01:11:06.226242 [INF] Initiating Shutdown...
+[1] 2025/07/05 01:11:06.226295 [INF] Initiating JetStream Shutdown...
+[1] 2025/07/05 01:11:06.226388 [INF] JetStream Shutdown
+[1] 2025/07/05 01:11:06.226512 [INF] JetStream cluster no metadata leader
+[1] 2025/07/05 01:11:07.129968 [ERR] Error trying to connect to route (attempt 1): dial tcp 172.19.0.3:6224: i/o timeout
+[1] 2025/07/05 01:11:07.130467 [INF] Server Exiting..

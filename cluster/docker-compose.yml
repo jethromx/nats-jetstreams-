@@ -1,0 +1,55 @@
+
+services:
+  nats-node-1:
+    image: nats:2.10-alpine
+    container_name: nats-node-1
+    hostname: nats-node-1
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+      - "6222:6222"
+    volumes:
+      - ./nats-node-1.conf:/etc/nats/nats-server.conf
+      - ./jetstream_data/node-1:/data/jetstream-node-1
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster
+
+  nats-node-2:
+    image: nats:2.10-alpine
+    container_name: nats-node-2
+    hostname: nats-node-2
+    ports:
+      - "4223:4223"
+      - "8223:8223"
+      - "6223:6223"
+    volumes:
+      - ./nats-node-2.conf:/etc/nats/nats-server.conf
+      - ./jetstream_data/node-2:/data/jetstream-node-2
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster
+    depends_on:
+      - nats-node-1
+
+  nats-node-3:
+    image: nats:2.10-alpine
+    container_name: nats-node-3
+    hostname: nats-node-3
+    ports:
+      - "4224:4224"
+      - "8224:8224"
+      - "6224:6224"
+    volumes:
+      - ./nats-node-3.conf:/etc/nats/nats-server.conf
+      - ./jetstream_data/node-3:/data/jetstream-node-3
+    command: ["-c", "/etc/nats/nats-server.conf"]
+    networks:
+      - nats-cluster
+    depends_on:
+      - nats-node-1
+      - nats-node-2
+
+networks:
+  nats-cluster:
+    driver: bridge
